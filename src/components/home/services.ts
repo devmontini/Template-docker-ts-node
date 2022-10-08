@@ -1,5 +1,5 @@
 import AppInformation from "@/types/response/AppInformation";
-import { HomeDAO } from "@/db/home";
+import { HomeDAO } from "@/database/models/home";
 import { getAppInfoQuery } from "@/types/request/home";
 
 export class HomeServices {

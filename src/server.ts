@@ -1,10 +1,24 @@
 import { Server, createServer } from "http";
 import e from "express";
 import { exitLog } from "./helpers";
+import { AppDataSource } from "./config/db";
 import CONFIG from "./config";
 
 export const startServer = (app: e.Application): Server => {
   const httpServer = createServer(app);
+
+  AppDataSource.initialize()
+    .then(() => {
+      process.stdout.write(
+        `📚 ${CONFIG.DATABASE.DB_NAME} has been initialized!\n`,
+      );
+    })
+    .catch((err) => {
+      process.stdout.write(
+        `📚 Error ${CONFIG.DATABASE.DB_NAME} during initialization\n`,
+        err,
+      );
+    });
 
   process
     .on("SIGINT", () => exitLog(null, "SIGINT"))

@@ -59,7 +59,7 @@ Comes with:
 ```bash
  cp .env.example .env
 ```
-
+> Check the `init.sql` folder to customize your settings (`/mysql/init.sql`)
 > Check the `config` folder to customize your settings (`/src/config`)
 
 <br>

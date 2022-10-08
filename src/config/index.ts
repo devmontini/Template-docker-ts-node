@@ -19,6 +19,13 @@ const CONFIG = {
   SERVER: {
     TIMEOUT: 60000, // 1m
   },
+  DATABASE: {
+    DB_HOST: process.env.DB_HOST || "127.0.0.1",
+    DB_PORT: Number(process.env.DB_PORT) || 3312,
+    DB_NAME: process.env.DB_NAME,
+    DB_USER: process.env.DB_USER,
+    DB_PASSWORD: process.env.DB_PASSWORD,
+  },
   LOG: {
     PATH: process.env.LOGGING_DIR || "logs",
     LEVEL: process.env.LOGGING_LEVEL || "info",

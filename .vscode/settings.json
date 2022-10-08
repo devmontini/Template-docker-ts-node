@@ -1,3 +1,31 @@
 {
-  "editor.stickyScroll.enabled": true
+  "editor.stickyScroll.enabled": true,
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "127.0.0.1",
+      "port": 3312,
+      "driver": "MySQL",
+      "database": "docker_db",
+      "name": "Docker",
+      "username": "docker",
+      "password": "123123"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "127.0.0.1",
+      "port": 3306,
+      "driver": "MySQL",
+      "name": "Local",
+      "database": "ong",
+      "username": "root",
+      "password": "123123"
+    }
+  ]
 }
