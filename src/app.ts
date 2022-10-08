@@ -7,6 +7,7 @@ import CONFIG from "./config";
 import { expressPinoLogger } from "./helpers";
 import * as errorHandler from "@/middlewares/errorHandler";
 import routes from "@/routes";
+import "reflect-metadata";
 
 export const createApp = (): express.Application => {
   const app = express();

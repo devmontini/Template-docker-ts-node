@@ -17,6 +17,8 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": false,
     "alwaysStrict": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
 
     /* Additional Checks */
     "noUnusedLocals": true,
